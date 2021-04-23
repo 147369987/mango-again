@@ -51,7 +51,7 @@ function draw() {
   textSize(25);
   text("• Help Mr.Sam to pluck the mangoes !!!",50 ,50 );
   text("• Drag and Release the stone to hit the mangoes !!!",50 ,100);
-  text("• Press R to get another chance !!! ",50 ,150 );
+  text("• Press Backspace to get another chance !!! ",50 ,150 );
   textSize(40);
   text("PLUCKING MANGOES",350 ,490 );
  
@@ -110,7 +110,7 @@ function mouseReleased()
 //create keyPressed function here
 function keyPressed()
 {
-  if(keyCode===82)
+  if(keyCode===8)
   {
     Matter.Body.setPosition(stoneObj.body,{x:140,y:315});
     string.attacher(stoneObj.body);
